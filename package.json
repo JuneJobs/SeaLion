@@ -1,0 +1,25 @@
+{
+  "name": "sealion",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JuneJobs/SeaLion.git"
+  },
+  "keywords": [
+    "server",
+    "backend",
+    "nodejs",
+    "microservice"
+  ],
+  "author": "Junhee Park (j.jobs1028@gmail.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JuneJobs/SeaLion/issues"
+  },
+  "homepage": "https://github.com/JuneJobs/SeaLion#readme"
+}
