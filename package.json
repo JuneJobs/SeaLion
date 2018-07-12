@@ -21,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/JuneJobs/SeaLion/issues"
   },
-  "homepage": "https://github.com/JuneJobs/SeaLion#readme"
+  "homepage": "https://github.com/JuneJobs/SeaLion#readme",
+  "dependencies": {
+    "redis": "^2.8.0"
+  }
 }
