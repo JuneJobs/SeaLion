@@ -1,4 +1,4 @@
-
+'use strict'
 /**
  * @description Interface for the client request
  * @author Junhee Park (j.jobs1028/gmail.com, Qualcomm Institute)
