@@ -6,7 +6,7 @@
  * @since       2018. 07. 11.
  * @last update 2018. 07. 11.
  * +-------------+
- * |  tcpClient  |
+ * | slTcpClient |
  * +-------------+
  * |client: net  |
  * +-------------+
