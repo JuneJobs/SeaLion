@@ -41,7 +41,7 @@
  *    ...
  * ]
  */
-class slDistributor extends require('../lib/slServer') {
+class slDistributor extends require('../lib/slTcpServer') {
     constructor() {
         super("slDistributor", 9000, ["POST/distributes", "GET/distributes"]); //super call the constructor of parents
         this.map = {};

@@ -16,7 +16,7 @@
  */
 
 const net = require('net');
-const slTcpClient = require('./slClient');
+const slTcpClient = require('./slTcpClient');
 //Define class tcpServer
 class slTcpServer {
     //Define constructor
