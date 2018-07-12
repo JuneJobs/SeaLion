@@ -4,6 +4,14 @@
  * @author Junhee Park (j.jobs1028/gmail.com, Qualcomm Institute)
  * @since       2018. 07. 12.
  * @last update 2018. 07. 12.
+ * +---------------+
+ * | slDistributor |
+ * +---------------+
+ * |client: net    |
+ * +---------------+
+ * |write()        |
+ * |sendInfo()     |
+ * +---------------+
  */
 
 /**
