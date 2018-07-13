@@ -11,7 +11,7 @@
 const business = require("./goods.js");
 
 //Reference from server logic
-class goods extends require('../server_modules/server.js') {
+class goods extends require('../lib/slTcpServer') {
     constructor() {
         super("goods"  //extended the tcpServer class
             , process.argv[2] ? Number(process.argv[2]) : 9010

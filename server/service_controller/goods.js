@@ -15,13 +15,13 @@
  */
 exports.onRequest = function (res, method, pathname, params, cb) {
     switch (method) {
-        case "POST":
+        case "POST":    //Insert
             return "POST"
-        case "GET":
+        case "GET":     //Search
             return inquery(method, pathname, params, (response) => {
                 process.nextTick(cb, res, response);
             });
-        default:
+        default:        //Delete
             return "DELETE"
     }
 }
