@@ -1,2 +1,9 @@
 [2018-07-12T22:54:04.575] [DEBUG] default - test
 [2018-07-12T22:55:18.422] [DEBUG] default - test
+[2018-07-15T18:01:04.983] [DEBUG] default - test
+[2018-07-15T18:02:01.576] [DEBUG] default - hello world
+[2018-07-15T18:12:20.059] [DEBUG] default - hello world
+[2018-07-15T18:17:50.689] [DEBUG] default - hello world
+[2018-07-15T18:17:50.692] [INFO] default - info
+[2018-07-15T18:19:06.376] [DEBUG] default - hello world
+[2018-07-15T18:19:06.379] [INFO] default - info
