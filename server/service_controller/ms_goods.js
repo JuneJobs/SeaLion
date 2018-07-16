@@ -9,6 +9,8 @@
 
 //Reference from business logic
 const business = require("./goods.js");
+const slLogger = require("../lib/slLogger");
+var logger = new slLogger('debug');
 
 //Reference from server logic
 class goods extends require('../lib/slTcpServer') {
@@ -21,6 +23,8 @@ class goods extends require('../lib/slTcpServer') {
         this.connectToDistributor("127.0.0.1", 9000, (data) => {
             console.log("Distributor Notification", data);
         })
+
+        logger.debug("test");
     }
     onRead(socket, data) { //Call the business logic for the client request 
         console.log("onRead", socket.remoteAddress, socket.remotePort, data);
