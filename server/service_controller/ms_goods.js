@@ -24,7 +24,7 @@ class goods extends require('../lib/slTcpServer') {
         this.connectToDistributor("127.0.0.1", 9000, (data) => {    //Connect to distrabutor
             console.log("Distributor Notification", data);
         })
-        logger.debug(thisline);
+        //logger.debug(thisline);
         logger.trace("trace");
         logger.info("info");
 

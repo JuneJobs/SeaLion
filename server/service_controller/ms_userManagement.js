@@ -9,29 +9,30 @@
 
 //Reference from business logic
 const config = require('../config/default.json');
-const business = require("./goods.js");
+const urm010 = require("./urm010.js");
+const ms_config = require("../config/userManagement.json")
 const slLogger = require("../lib/slLogger");
 var logger = new slLogger(config.loggerLevel);
 
 //Reference from server logic
-class goods extends require('../lib/slTcpServer') {
+class userManagement extends require('../lib/slTcpServer') {
     constructor() {
-        super("goods"  //extended the tcpServer class
+        super("userManagement"  //extended the tcpServer class
             , process.argv[2] ? Number(process.argv[2]) : 9010
-            , ["POST/goods", ]
+            , ms_config.forms
         );
 
-        this.connectToDistributor("127.0.0.1", 9000, (data) => {    //Connect to distrabutor
+        this.connectToDistributor("127.0.0.1", 9000, (data) => {    //Connect to distributor
             console.log("Distributor Notification", data);
         })
 
     }
     onRead(socket, data) { //Call the business logic for the client request 
         console.log("onRead", socket.remoteAddress, socket.remotePort, data);
-        business.onRequest(socket, data.method, data.uri, data.params, (s, packet) => {
+        urm010.onRequest(socket, data.method, data.uri, data.params, (s, packet) => {
             socket.write(JSON.stringify(packet) + '	');
         })
     }
 }
 
-new goods();
+new userManagement();

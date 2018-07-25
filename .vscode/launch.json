@@ -8,7 +8,7 @@
             "request": "launch",
             "name": "Launch Program",
             //"program": "${workspaceRoot}/index.js",
-            "program": "${workspaceRoot}/server/service_controller/ms_goods.js",
+            "program": "${workspaceRoot}/server/service_controller/ms_userManagement.js",
             "runtimeExecutable": "/Users/junheepark/.nvm/versions/node/v10.6.0/bin/node",
             "cwd": "${workspaceRoot}"
         },
