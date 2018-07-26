@@ -2,11 +2,7 @@
     "forms" : [
         "POST/urm010",
         "POST/urm020",
-        "POST/urm030",
-        "POST/urm040",
-        "POST/urm050",
-        "POST/urm070",
-        "POST/urm080"
+        "POST/urm030"
     ],
     "messageType" : {
         "0": "00"
